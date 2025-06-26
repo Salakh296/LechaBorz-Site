@@ -1,2 +1,2 @@
-# Lecha BORZ Website
-This is the official site for the Lecha BORZ token.
+# Lecha BORZ Token Website
+Official website for the Lecha BORZ Ethereum token.

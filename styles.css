@@ -1,0 +1,22 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #002b20;
+  color: #ffd700;
+  text-align: center;
+  padding: 2rem;
+}
+.logo {
+  width: 100px;
+  height: auto;
+}
+a {
+  color: #fff;
+  background-color: #006644;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #00875a;
+}

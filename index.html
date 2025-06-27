@@ -1,50 +1,56 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lecha BORZ Token</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #002b1f;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #ffd700;
+      font-size: 32px;
+    }
+    a.buy-button {
+      background: #27ae60;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px 0;
+    }
+    iframe {
+      border: none;
+      margin-top: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Lecha BORZ Logo" class="logo" />
-    <h1>Lecha BORZ (BORZ)</h1>
-    <p>Strength. Legacy. Trust. The future of decentralized finance.</p>
-    <div class="buttons">
-      <a href="https://www.dextools.io/app/ru/ether/pair-explorer/0x3e1caa99a67fbdd6ea9d9bf410b895eacd355617" target="_blank">📈 Live Chart</a>
-      <a href="https://app.uniswap.org/#/swap?outputCurrency=0x037293F456A7cAF2c2d03BA4C760F578c56D3CdD" target="_blank">💰 Buy BORZ</a>
-    </div>
-  </header>
+  <h1>Добро пожаловать в Lecha BORZ</h1>
+  
+  <p>Нажмите кнопку ниже, чтобы купить токен BORZ на Uniswap:</p>
 
-  <main>
-    <section class="section">
-      <h2>About the Project</h2>
-      <p>Lecha BORZ is a community-driven Ethereum token inspired by legacy and loyalty.
-         Built for speed, transparency, and true decentralization. Our mission is to
-         empower holders and reward belief.</p>
-    </section>
+  <a class="buy-button" href="https://app.uniswap.org/#/swap?inputCurrency=0x037293F456A7cAF2c2d03BA4C760F578c56D3CdD" target="_blank" rel="noopener noreferrer">
+    Купить BORZ на Uniswap
+  </a>
 
-    <section class="section">
-      <h2>Tokenomics</h2>
-      <ul>
-        <li><strong>Total Supply:</strong> 10,000,000,000 BORZ</li>
-        <li><strong>Liquidity Locked:</strong> ✅</li>
-        <li><strong>Chain:</strong> Ethereum (ERC-20)</li>
-      </ul>
-    </section>
+  <h2>Живой график (DEXTools)</h2>
 
-    <section class="section">
-      <h2>Resources</h2>
-      <a href="whitepaper.pdf" class="button" download>📄 Download Whitepaper</a>
-    </section>
-
-    <footer>
-      <p>🔗 <a href="https://t.me/lecha_BORZ" target="_blank">Telegram</a> |
-         <a href="https://twitter.com/Lecha_borz_" target="_blank">Twitter</a> |
-         <a href="mailto:lechaborz.com@lechaborz.com">Contact</a></p>
-    </footer>
-  </main>
+  <iframe
+    src="https://www.dextools.io/widget/chart/pair-explorer/ethereum/0xC1a0318910D556ed0bce184B2023E829c7ffddda"
+    width="100%"
+    height="480"
+    scrolling="no">
+  </iframe>
 </body>
 </html>

@@ -7,15 +7,23 @@
   <style>
     body {
       background-color: #002b1f;
-      color: #fff;
+      color: #ffffff;
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 40px;
     }
+
     h1 {
       color: #ffd700;
-      font-size: 32px;
+      font-size: 36px;
+      margin-bottom: 20px;
     }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
     a.buy-button {
       background: #27ae60;
       color: white;
@@ -25,31 +33,37 @@
       font-size: 18px;
       text-decoration: none;
       display: inline-block;
-      margin: 20px 0;
+      margin-bottom: 30px;
+      transition: background 0.3s;
     }
+
+    a.buy-button:hover {
+      background: #219150;
+    }
+
     iframe {
       border: none;
-      margin-top: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+      border-radius: 10px;
+      width: 100%;
+      max-width: 800px;
+      height: 480px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.4);
     }
   </style>
 </head>
 <body>
   <h1>Добро пожаловать в Lecha BORZ</h1>
-  
-  <p>Нажмите кнопку ниже, чтобы купить токен BORZ на Uniswap:</p>
 
-  <a class="buy-button" href="https://app.uniswap.org/#/swap?inputCurrency=0x037293F456A7cAF2c2d03BA4C760F578c56D3CdD" target="_blank" rel="noopener noreferrer">
-    Купить BORZ на Uniswap
+  <p>Купите наш токен напрямую через Uniswap всего в один клик:</p>
+
+  <a class="buy-button" href="https://app.uniswap.org/#/swap?inputCurrency=USDC&outputCurrency=0x037293F456A7cAF2c2d03BA4C760F578c56D3CdD&exactAmount=1&type=exactIn" target="_blank" rel="noopener noreferrer">
+    Купить 1 BORZ за 1 USDC
   </a>
 
-  <h2>Живой график (DEXTools)</h2>
+  <h2 style="margin-top: 50px; color: #ffd700;">График токена (BORZ/USDC)</h2>
 
   <iframe
     src="https://www.dextools.io/widget/chart/pair-explorer/ethereum/0xC1a0318910D556ed0bce184B2023E829c7ffddda"
-    width="100%"
-    height="480"
     scrolling="no">
   </iframe>
 </body>
